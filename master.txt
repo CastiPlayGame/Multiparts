@@ -1,4 +1,5 @@
 {
+    "web": "http://multiparts.rf.gd/",
     "version":1.35,
     "masterPath":"Common/",
     "versionPath":"Versions/",
@@ -34,6 +35,5 @@
     "path":[
       "BoardCalc.exe",
       "Core.exe"
-    ],
-    "web": "http://multiparts.rf.gd/"
+    ]
 }
