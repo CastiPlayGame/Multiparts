@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="bin/style.css">    
+    <link rel="stylesheet" href="bin/forms.css">
+</head>
+<body>    
+
+    <div class="rows" style="border:1px solid #000;width: 36.3cm;height:19.3cm;"> 
+        <div class="Contss">
+            <div class="cols col">
+                <h1 id="title">Muestrario</h1>
+                <div class="img"></div>
+                <div class="grid grd">
+
+                </div>
+            </div>
+        </div>   
+        <div class="i">
+            <div class="ContGrid col-2 gap1">
+                <div class="Chck1">
+                    <input type="radio" name="Options" id="radioSingle" onchange="load()" checked>
+                    <label for="radioSingle">Una Pagina</label>
+                </div>
+                
+                <div class="Chck1">
+                    <input type="radio" name="Options" id="radioMultiple" onchange="load()">
+                    <label for="radioMultiple">Varias Paginas</label>
+                </div>
+
+
+
+                <div class="Inp2">
+                    <button id="sub" onmousedown="stepper(this)" onmouseup="clearInterval(lopp)">-</button>
+                    <input onchange="setval(this);load();" type="number" min="1" max="100" step="1" value="1" id="S">
+                    <button id="add" onmousedown="stepper(this)" onmouseup="clearInterval(lopp)">+</button>
+                </div>
+                <div class="Inp2">
+                    <button id="sub" onmousedown="stepper(this)" onmouseup="clearInterval(lopp)">-</button>
+                    <input onchange="setval(this);load();" type="number" min="2" max="100" step="1" value="2" id="E">
+                    <button id="add" onmousedown="stepper(this)" onmouseup="clearInterval(lopp)">+</button>
+                </div>
+            </div>         
+            <div class="Chck1">
+                <input type="checkbox" name="" id="chck2" onchange="load()">
+                <label for="chck2">Alinear</label>
+            </div>
+            <div class="Chck1">
+                <input type="checkbox" name="" id="chck3" onchange="load()">
+                <label for="chck3">Titulo</label>
+            </div>
+            <div class="ContGrid col-2 gap1">
+                <div class="ContInp texttile">
+                    <label>Titulo</label>
+                    <div>
+                        <input type="text" min="1" id="texttile" onchange="load()">
+                    </div>
+                </div>
+                <div class="ContInp">
+                    <label>Ancho</label>
+                    <div>
+                        <input onchange="setval(this);load();" type="number" min="1" max="100" step="1" value="0" id="width">
+                    </div>
+                </div>
+                <div class="ContInp">
+                    <label>Alto</label>
+                    <div>
+                        <input onchange="setval(this);load();" type="number" min="1" max="100" step="1" value="0" id="height">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="ContInp codes">
+                <div>
+                    <textarea name="" id="code" cols="30" rows="5">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="multiple" >
+                <div class="ContInp">
+                    <label>Paginas</label>
+                    <div>
+                        <select name="" id="PagesCont">
+                            <option value="" selected hidden>Cambia Pagina</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="ContGrid col-2 gap1">
+                <div class="Inp2">
+                    <button id="sub" onmousedown="stepper(this,true)">-</button>
+                    <input onchange="setval(this);" type="number" min="1" max="100" step="1" value="1" id="Col">
+                    <button id="add" onmousedown="stepper(this,true)">+</button>
+                </div>
+                <div class="Inp2">
+                    <button id="sub" onmousedown="stepper(this,true)">-</button>
+                    <input onchange="setval(this);" type="number" min="1" max="100" step="1" value="1" id="Row">
+                    <button id="add" onmousedown="stepper(this,true)">+</button>
+                </div>
+            </div>
+            <br>
+            <input type="button" value="Abrir" onclick="$('.popup').addClass('active')">
+            <br>
+            <br>
+
+            <button onclick="copyToClipboard()">Copiar</button>
+            <button id="add_edit" class="multiple" onclick="add()">Agregar</button>
+            <button id="del" class="multiple" onclick="eliminar()">Eliminar</button>
+        </div>
+    </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div id="DepaCont" class="ContGrid col-4 gap1">
+
+            </div>
+            <br>
+            <input type="button" value="Cerrar" onclick="$('.popup.active').removeClass('active')">
+        </div>
+    </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="appGrid.js"></script>
+
+</html>
