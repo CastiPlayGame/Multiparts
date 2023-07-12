@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    flex: 1 0 auto;
+    flex-grow: 0.2;
+    height: auto;
+    width: auto;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.32);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.til{
+    width: 100%;
+    background-color: crimson;
+    height: 0.5cm;
+    margin-top: 0;
+}
+
+.til h1{    
+    color: white;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 0.27cm;
+    padding-right: 0.27cm;
+}
+
+.pd{
+    margin: 0.12cm;
+    width: inherit;
+    height: inherit;
+    margin-top: 0;
+    margin-bottom: .6cm;
+    position: relative;
+}
+.line{
+    margin-top: 0.3cm;
+    width: 0.3cm;
+    position: absolute;
+    height: auto;
+    border: solid 1px black;
+    opacity: 0.3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.grid.grd{
+    display: grid;
+    width: inherit;
+    position: sticky;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fill, minmax(2.5cm, 1fr) );
+    grid-auto-rows: 2.5cm;
+    height: inherit;
+    gap: 0.3cm;
+    z-index: 1;
+    margin-top: MARGINGRID;
+}
+
+.grid.flx{
+    display: flex;
+    COLCENT_ALIGN
+    flex-direction: row;
+    position: sticky;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 0.3cm;
+    z-index: 1;
+    margin-top: MARGINGRID;
+}
+
+
+.img{
+    position: absolute;
+    transform: scale(0.9);
+    background-image: url("back.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;    
+    opacity: 0.25;
+    width: IMGSETW;
+    height: IMGSETH;
+    z-index: 0;
+}
+.col{
+    display: flex;
+    flex-shrink: 0;
+    align-items: FlEX-COLCENT_ALIGN;
+    justify-content: COLCENT_JUSTI;
+    padding: COLPADDING;
+    width: COLSETW;
+    height: COLSETH;
+    overflow: hidden;
+    position: fixed;
+    border: 1px solid #000;
+}
+#title{
+    position: absolute;
+    display: TITLEDISPLAY;
+    top: 0.75%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%,-0.75%);
+    font-family: tahoma;
+    font-weight: bold;
+}

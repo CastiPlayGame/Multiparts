@@ -1,0 +1,267 @@
+.Contss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -9%;
+    height: 100%;
+}
+.rows{
+    z-index:0;
+}
+.ContInp.texttile{
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.cols{
+    position: relative;
+    transform: scale(0.53);
+    
+}
+.i{
+    position: relative;
+    float: right;
+    width: 15rem; 
+    margin-top: -50.7%;
+    z-index:2;
+    padding: 10px;
+}
+.multiple{
+    display: none;
+}
+/*Estilos De Botones*/
+
+/*CheckBox Estilo */
+.Chck1{
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Chck1 input[type="checkbox"],.Chck1 input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 100%;
+    width: 1.25rem;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 0.3rem 0 0;
+    align-items: center;
+    justify-content: center;
+}
+.Chck1 input[type="radio"]{
+    border-radius: 50%;
+
+}
+.Chck1 label{
+    font-family: Tahoma;
+    font-size: 95%;
+}
+.Chck1 input[type="checkbox"]::after,.Chck1 input[type="radio"]::after{
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 100%;
+    color: white;
+    display: none;
+}
+.Chck1 input[type="checkbox"]:hover ,.Chck1 input[type="radio"]:hover{ background-color: #a5a5a5; }
+.Chck1 input[type="checkbox"]:checked, .Chck1 input[type="radio"]:checked{ background-color: #b22222ff; }
+.Chck1 input[type="checkbox"]:checked::after, .Chck1 input[type="radio"]:checked::after{ display: block; }
+
+/*Input Text Estilo */
+.ContInp{
+    display: inline-grid;
+}
+
+.ContInp label{
+    margin: 0% 1% 0 4%;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+.ContInp div{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ContInp div input[type=text]{
+    width: inherit;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin: 0 3% 0 3%;
+}
+.ContInp div textarea{
+    resize: none;
+    width: inherit;
+    height: 9rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    overflow: hidden;
+    margin: 0 3% 0 3%;
+}
+
+.ContInp div input[type=number]{
+    width: inherit;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    margin: 0 3% 0 3%;
+    -moz-appearance: textfield;
+
+}
+.ContInp div input[type=number]::-webkit-inner-spin-button,
+.ContInp div input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}   
+
+.ContGrid{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+}
+
+.ContGrid.col-2{
+    grid-template-columns: auto auto;
+}
+.ContGrid.col-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ContGrid.gap1{
+    gap: .5rem 1.5rem;
+}
+
+/*Input Number*/
+.Inp2{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+.Inp2 input[type="number"]{
+    -moz-appearance: textfield;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    background-color: #ffffff;
+    color: #202030;
+    outline: none;
+    width: 70%;
+}
+.Inp2 input::-webkit-inner-spin-button,
+.Inp2 input::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}   
+.Inp2 button{
+    color: #3264fe;
+    background-color: #ffffff;
+    border: none;
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Inp2 #sub{
+    padding-left: 10%;
+}
+.Inp2 #add{
+    padding-right: 10%;
+}
+
+
+.codes div{
+    height: fit-content;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.pd input[name="p"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+.selected , .selected label{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+.selected label{
+    background-color: black;
+    opacity: 0;
+}
+
+
+.selected label:hover{
+    background-color: black;
+    opacity: 0.2;
+}
+.selected i{
+    display: none;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-35%);
+    color: crismon;
+    z-index: 1;
+}
+
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0);
+    background: #fff;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+    z-index: 3;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transform: translate(-50%,-50%)scale(1);
+}
