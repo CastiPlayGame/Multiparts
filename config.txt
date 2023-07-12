@@ -1,4 +1,39 @@
 {
-  "version":1.2,
-  "path":"https://github.com/CastiPlayGame/Multiparts/raw/master/V1.2/V1.35.rar"
+    "web": "http://multiparts.rf.gd/"
+    "version":1.35,
+    "masterPath":"Common/",
+    "versionPath":"Versions/",
+    "Common":{
+        "pthSourc1":"Libs/",
+        "Sourc1":[
+            "tk",
+            "tcl8",
+            "setuptools-63.2.0.dist-info",
+            "selenium",
+            "psutil",
+            "PIL",
+            "markupsafe",
+            "certifi",
+            "tcl.rar"
+        ],
+        
+        "pthSourc2":"Core/",
+        "Sourc2":["core.rar"],
+
+        "pthSourc3":"Basic/",
+        "Sourc3":[
+            "Mostrario",
+            "bin",
+            "appflx.js",
+            "appGrid.js",
+            "Flex.html",
+            "Grid.html",
+            "icon.ico",
+            "index.html"
+        ]
+    },
+    "path":[
+      "BoardCalc.exe",
+      "Core.exe"
+    ]
 }
