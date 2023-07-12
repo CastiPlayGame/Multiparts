@@ -1,5 +1,5 @@
 {
-    "web": "http://multiparts.rf.gd/"
+    "web": "http://multiparts.rf.gd/",
     "version":1.35,
     "masterPath":"Common/",
     "versionPath":"Versions/",
