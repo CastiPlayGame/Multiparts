@@ -35,5 +35,6 @@
     "path":[
       "BoardCalc.exe",
       "Core.exe"
-    ]
+    ],
+    "colorsTemp":{"0":"#1e1e1e","1":"#252526","2":"#2d2d30","3":"#3e3e42","4":"#007acc"}
 }
