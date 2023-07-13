@@ -14,8 +14,8 @@
 
         "pthSourc3":"Basic/",
         "Sourc3":[
-            "Mostrario",
-            "bin",
+            "Mostrario/",
+            "bin/",
             "appflx.js",
             "appGrid.js",
             "Flex.html",
