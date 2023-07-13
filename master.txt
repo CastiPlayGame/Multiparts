@@ -6,15 +6,7 @@
     "Common":{
         "pthSourc1":"Libs/",
         "Sourc1":[
-            "tk",
-            "tcl8",
-            "setuptools-63.2.0.dist-info",
-            "selenium",
-            "psutil",
-            "PIL",
-            "markupsafe",
-            "certifi",
-            "tcl.rar"
+            "libs.rar"
         ],
         
         "pthSourc2":"Core/",
