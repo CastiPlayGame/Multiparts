@@ -1,5 +1,5 @@
 {
-    "web": "http://multiparts.rf.gd/",
+    "web": "https://raw.githubusercontent.com/CastiPlayGame/Multiparts/master/",
     "version":1.35,
     "masterPath":"Common/",
     "versionPath":"Versions/",
